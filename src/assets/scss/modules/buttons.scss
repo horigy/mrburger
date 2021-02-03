@@ -1,0 +1,49 @@
+.btn {
+    text-transform: uppercase;
+    border-radius: 5px;
+    @include ubuntu ($style: medium);
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 15px;
+
+}
+
+.order_btn {
+    background: $orange;
+    &:hover {
+        background: #c1401e;
+    }
+}
+.order_btn-order {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    color: white;
+    line-height: 1;
+    border: 0
+}
+
+.clear_btn {
+    @include ubuntu ();
+    font-weight: 300;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 1;
+    color: white;
+    border: 0;
+    background: transparent;
+}
+
+.review_btn {
+    background: $black;
+    margin-top: 17px;
+    &:hover {
+        background: #1f2122;
+    }
+    @include tablets {
+        margin-top: 25px;
+    }
+    
+}

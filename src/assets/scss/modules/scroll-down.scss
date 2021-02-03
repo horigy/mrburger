@@ -1,0 +1,10 @@
+.scrolldown {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include phones {
+      bottom: 2%;
+    }
+  }

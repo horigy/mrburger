@@ -1,0 +1,56 @@
+.wework {
+    background: url("/assets/img/images/pages_background/howwework.png") center center / cover no-repeat;
+}
+
+.wework__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.wework__title {
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.player__container {
+    width: 100%;
+    @include tablets {
+        width: 90%;
+    }
+}
+
+.player__elem {
+    width: 100%;
+    height: 500px;
+
+    @include tablets {
+        height: 350px;
+    }
+
+    @include phones {
+        height: 300px;
+    }
+}
+
+// .wework__player {
+//     width: 100%;
+//     height: 50%;
+// }
+
+// .player__wrapper {
+//     width: 100%;
+//     height: 50%;
+// }
+
+// .player__elem {
+//     width: 100%;
+//     height: 100%;
+// }

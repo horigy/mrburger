@@ -1,0 +1,51 @@
+.section__title.order__title Закажите доставку
+.container.order__container    
+    
+    form.order__form#form(action="")
+        .order__form-left
+            .order__row
+                label.order__block
+                    .order__name Имя
+                    input(type="text" name="name" class="order__input" required)
+                label.order__block
+                    .order__name Телефон
+                    input(type="text" name="phone" class="order__input" required)
+            .order__row
+                label.order__block
+                    .order__name Улица
+                    input(type="text" class="order__input")
+            .order__row
+                label.order__block
+                    .order__name Дом
+                    input(type="text" class="order__input")
+                label.order__block
+                    .order__name Корпус
+                    input(type="text" class="order__input")
+                label.order__block
+                    .order__name Квартира
+                    input(type="text" class="order__input")
+                label.order__block
+                    .order__name Этаж
+                    input(type="text" class="order__input")
+        .order__form-right
+            .order__row
+                label.order__block.order__comment
+                    .order__name Комментарий
+                    textarea(name="comment" class="order__input input__textarea")
+            .order__row.right_order_row
+                .order__radio.order__change
+                    input(id="change" type="radio" name="radio" class="radio_btn")
+                    label(for="change" class="order__name order_name_radio") Потребуется сдача
+                .order__radio.order__card
+                    input(id="card" type="radio" name="radio" class="radio_btn")
+                    label(for="card" class="order__name order_name_radio") Оплата по карте
+            .order__row.right_order_row
+                input(id="no_call" type="checkbox" class="nocall_btn")
+                label(for="no_call" class="order__name order_checkbox") Не перезванивать
+            .order__row.order_btns.right_order_row
+                button(type="submit" id="send" class="btn order_btn order_btn-order") Заказать
+                button(type="reset" class="btn clear_btn") Очистить
+.order__overlay
+    .order__overlay-message
+        span.order__overlay-text
+        a(href="#" id="order_close" class="btn order_btn order_btn-order order_btn_close") Закрыть

@@ -1,0 +1,32 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section__title {
+    @include gagalin();
+    font-size: 72px;
+    line-height: 85px;
+    
+    // line-height: 1;
+    @media screen and (max-width: 1000px) {
+        font-size: 60px;
+    }
+
+    @include phones {
+        font-size: 55px;
+        line-height: 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

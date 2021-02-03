@@ -1,0 +1,94 @@
+.features {
+    background: url('/assets/img/images/pages_background/features_bg.jpg') center center / cover no-repeat;
+}
+
+.features__container {
+    width: 85%;
+    @include tablets {
+        width: 95%;
+    }
+}
+
+.features__title {
+    color: $black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 540px) {
+        flex-direction: column;
+    }
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.features__item {
+    width: calc(100% / 3 - 26px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+    @media screen and (max-width: 540px) {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    @include phones {
+        width: 100%;
+        flex-direction: row;
+    }
+}
+
+.feature__text {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 540px) {
+        text-align: left;
+    }
+
+    @include phones {
+        text-align: left;
+    }
+}
+
+.feature__image {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 540px) {
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    @include phones {
+        width: 25%;
+        margin-right: 10px;
+    }
+}
+
+.feature__title {
+    @include lifehack ();
+    font-size: 24px;
+    margin-bottom: 13px;
+    color: $black;
+}
+
+.feature__content {
+    @include ubuntu ($style: light);
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(47, 50, 52, 0.8);
+}

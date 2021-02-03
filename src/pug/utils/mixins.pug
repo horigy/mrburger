@@ -1,0 +1,11 @@
+
+
+mixin icon(name, className)
+  - var icon = require(`/assets/img/icons/${name}.svg`);
+  svg(class=className viewBox=icon.viewBox preserveAspectRatio="none")
+    use(xlink:href=icon.url)
+
+mixin image(name, className)
+  img(src=`/assets/img/images/${name}`, class=className)
+
+
