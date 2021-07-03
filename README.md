@@ -1,3 +1,5 @@
+# Sample landing page, website of buger restaurant
+
 ## Published at
 https://horigy.github.io/ngerasimov.github.io/mr-burger/
 
